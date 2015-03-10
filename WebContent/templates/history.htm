@@ -1,0 +1,9 @@
+<div style="position:relative; height:100%" class="reveal-animation" style="overflow:hidden">
+    <h3><select ng-model="days" ng-options="day.display for day in daysOption"></select>
+    <select ng-model="main.selected" ng-options="option.name for option in thermostatOptions">
+            </select></h3>
+    <chart data="main.history" style="height:calc(50% - 3em);"></chart>
+    <h3><select ng-model="ext.selected"  ng-options="option.name for option in thermostatOptions">
+            </select></h3>
+    <chart data="ext.history" style="height:calc(50% - 3em);"></chart>
+</div>
